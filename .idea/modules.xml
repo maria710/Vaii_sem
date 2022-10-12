@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../KWFlowers.iml" filepath="$PROJECT_DIR$/../KWFlowers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../KCFlowers.iml" filepath="$PROJECT_DIR$/../KCFlowers.iml" />
     </modules>
   </component>
 </project>

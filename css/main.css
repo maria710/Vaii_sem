@@ -7,21 +7,24 @@ a {
   color: black;
 }
 
-.main-nav ul {
+.main-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 70%;
-  background: bisque;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10pt 10pt 10pt 15pt;
+  background: #b8b6b7;
+  position: center;
+}
+
+.main-ul {
+  justify-content: space-between;
+}
+
+.main-logo {
+  text-decoration-color: red;
 }
 
 .main-nav ul li {
   list-style: none;
 }
-
 
 .main-nav a {
   text-transform: uppercase;
@@ -31,4 +34,26 @@ a {
   text-decoration: underline;
   font-weight: bold;
 }
+
+.upper-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  background: #3f403f;
+}
+
+.upper-nav ul li {
+  list-style: none;
+}
+
+.con-description {
+  padding-top: 100px;
+}
+
+.description {
+  padding-top: 20px;
+
+}
+
 
