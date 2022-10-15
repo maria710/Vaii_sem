@@ -1,4 +1,4 @@
-:root{
+:root {
   --lightPink: #FFE6E6;
   --darkPink: #F2D1D1;
   --lightBlue: #DAEAF1;
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
   background-color: white;
 }
 
@@ -19,7 +19,7 @@ a {
   display: flex;
   align-items: center;
   background: var(--darkPink);
-  position: center;
+  position: center;;
 }
 
 .main-ul {
@@ -52,6 +52,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .upper-nav ul li {
@@ -80,7 +81,7 @@ a {
 
 }
 
-.login-container h2{
+.login-container h2 {
   text-align: center;
 }
 
@@ -92,15 +93,15 @@ a {
   background: url("../resources/carousel.jpg") no-repeat left center;
 }
 
-.banner  span {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    left: 50%;
-    font-size: 3rem;
-    color: black;
-    font-family: "Lucida Handwriting, Lucida Console", serif;
-    transform: translate(-50%, -50%);
+.banner span {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  color: black;
+  font-family: "Lucida Handwriting, Lucida Console", serif;
+  transform: translate(-50%, -50%);
 }
 
 .block-blue {
@@ -115,7 +116,7 @@ a {
 }
 
 .logo-img {
-  width: 100px;
+  width: 270px;
   height: 100px;
 }
 
@@ -123,11 +124,11 @@ a {
   padding: 1.5rem 3rem;
 }
 
-.index-info h1{
+.index-info h1 {
   font-size: 3rem;
 }
 
-.index-info p{
+.index-info p {
   font-size: 1.5rem;
 }
 
@@ -192,10 +193,89 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0px 20px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading-name {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration-style: dashed;
+}
+
+.gallery-container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.gallery-container .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  align-items: center;
+}
+
+.gallery-container .box .dream img {
+  display: flex;
+  width: 90%;
+  padding-bottom: 20px;
+
+  border-radius: 5%;
+}
+
+
+.gallery {
+  webkit-column-count: 3;
+  moz-column-count: 3;
+  column-count: 3;
+  webkit-column-width: 33%;
+  moz-column-width: 33%;
+  column-width: 33%;
+  padding: 30px;
+
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    webkit-column-count: 1;
+    moz-column-count: 1;
+    column-count: 1;
+    webkit-column-width: 100%;
+    moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+
+.img-about-us {
+  width: 50%;
+  height: 100%;
 }
 
 
