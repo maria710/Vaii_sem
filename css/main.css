@@ -27,10 +27,7 @@ a {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-}
-
-.main-logo {
-  text-decoration-color: red;
+  font-size: 25px;
 }
 
 .main-nav ul li {
@@ -64,21 +61,21 @@ a {
 }
 
 .description {
-  padding-top: 20px;
+  padding: 10px 20px;
 }
 
 .login-container {
   width: 50%;
-  display: block;
+  flex-wrap: wrap;
+  display: inline-block;
   padding: 3rem;
-  height: 55vh;
-  border-radius: 5%;
+  height: 50%;
+  border-radius: 20px;
   background-color: var(--lightPink);
   position: relative;
   top: 50vh;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .login-container h2 {
@@ -90,7 +87,13 @@ a {
   width: 100%;
   height: 50vh;
   display: block;
-  background: url("../resources/carousel.jpg") no-repeat left center;
+  background: url("../resources/IMG-5012.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+.banner-autumn {
+  background: url("../resources/banner_autumn.jpeg") no-repeat left center;
+  background-size: cover;
 }
 
 .banner span {
@@ -98,8 +101,9 @@ a {
   display: inline-block;
   top: 50%;
   left: 50%;
-  font-size: 3rem;
-  color: black;
+  font-size: 9rem;
+  font-weight: bold;
+  color: white;
   font-family: "Lucida Handwriting, Lucida Console", serif;
   transform: translate(-50%, -50%);
 }
@@ -193,91 +197,86 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.gallery-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 40px 20px 0px 20px;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 .heading-name {
   font-size: 30px;
   font-weight: bold;
   text-decoration-style: dashed;
 }
 
-.gallery-container .box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.gallery-container .box .dream {
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  align-items: center;
-}
-
-.gallery-container .box .dream img {
-  display: flex;
-  width: 90%;
-  padding-bottom: 20px;
-
-  border-radius: 5%;
-}
-
-
-.gallery {
-  webkit-column-count: 3;
-  moz-column-count: 3;
-  column-count: 3;
-  webkit-column-width: 33%;
-  moz-column-width: 33%;
-  column-width: 33%;
-  padding: 30px;
-
-}
-
-.gallery .pics {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease;
-}
-
-.gallery .animation {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-@media (max-width: 450px) {
-  .gallery {
-    webkit-column-count: 1;
-    moz-column-count: 1;
-    column-count: 1;
-    webkit-column-width: 100%;
-    moz-column-width: 100%;
-    column-width: 100%;
-  }
-}
-
-@media (max-width: 400px) {
-  .btn.filter {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-  }
-}
-
 .img-about-us {
   width: 50%;
   height: 100%;
+  box-shadow: 10px 10px 10px 10px #c9c8c8;
+  border-radius: 3%;
 }
 
+.gallery img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%;
+  }
+}
+
+.carousel-multi-item-2 .card img {
+  border-radius: 2px;
+}
+
+.carousel-img {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+.carousel-caption h5 {
+  font-size: 3rem;
+}
+
+@media (min-width: 800px) {
+  .carousel-caption h5 {
+    font-size: 5rem;
+  }
+}
+
+.product-icons i {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product-detail {
+  padding: 1rem;
+}
+
+.product-detail p {
+  font-size: 1.2rem;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.product-detail button {
+  padding: .37rem .5rem;
+  background-color: var(--lightPink);
+}
+
+.product>p {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.product {
+  margin-top: 1rem;
+}
 
 
 
